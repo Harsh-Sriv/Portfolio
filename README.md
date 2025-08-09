@@ -10,10 +10,10 @@ It features a **clean, glassmorphism-inspired UI** with a **dynamic particle bac
 ## 📸 Screenshots
 Images are located in the `/Portfolio-Harsh Srivastava/images/` folder.
 
-![Home Page](/Portfolio-Harsh%20Srivastava/images/home.png)
-![About Page](/Portfolio-Harsh%20Srivastava/images/about.png)
-![Projects Page](/Portfolio-Harsh%20Srivastava/images/projects.png)
-![Contact Page](/Portfolio-Harsh%20Srivastava/images/contact.png)
+![Home Page](/Portfolio-Harsh%20Srivastava/images/Home.png)
+![About Page](/Portfolio-Harsh%20Srivastava/images/About.png)
+![Projects Page](/Portfolio-Harsh%20Srivastava/images/Projects.png)
+![Contact Page](/Portfolio-Harsh%20Srivastava/images/Contact.png)
 
 
 ---
