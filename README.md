@@ -1,7 +1,49 @@
-Harsh Srivastava's Personal PortfolioWelcome to the source code for my personal portfolio website. This project is a fully responsive, modern single-page application built with React to showcase my skills, projects, and journey as a developer. It features a clean, glassmorphism-inspired UI with a dynamic particle background.📸 ScreenshotsHere’s a glimpse of the portfolio. The images are located in the /Portfolio-Harsh Srivastava/images/ folder in this repository.Home PageAbout PageProjects PageContact Page✨ FeaturesModern UI/UX: Designed with a clean, glassmorphism theme for the navigation and footer elements.Interactive Background: Features a dynamic, animated particle background using tsparticles.Dynamic Project Fetching: The projects page automatically fetches and displays all my public repositories directly from the GitHub API.Interactive Timeline: The "About Me" page includes a visually engaging, interactive timeline to showcase my academic and professional journey.Functional Contact Form: A working contact form integrated with Formspree to receive messages directly in my email.Fully Responsive: Ensures a seamless experience across all devices, from mobile phones to desktops.🛠️ Tech StackThis project was built using the following technologies:Frontend: ReactBuild Tool: ViteAPI Calls: AxiosParticle Animations: tsParticlesContact Form: FormspreeDeployment: GitHub Pages🚀 Setup and InstallationTo run this project locally, follow these steps:Clone the repository:git clone https://github.com/Harsh-Sriv/your-repo-name.git
-cd your-repo-name
-Install dependencies:npm install
-Set up environment variables:Create a file named .env in the root of the project.Add your GitHub Personal Access Token to fetch your projects.VITE_GITHUB_TOKEN=your_github_personal_access_token
-Run the development server:npm run dev
-The application will be available at http://localhost:5173 (or another port if 5173 is busy).🌐 DeploymentThis site is deployed using GitHub Pages. The gh-pages package handles the build and deployment process.To deploy your own version, first update the homepage field in your package.json file, then run the following command:npm run deploy
-This command will build the application and push the contents of the dist folder to a gh-pages branch on your repository.🙏 AcknowledgementsThank you for visiting my portfolio. Feel free to connect with me!
+# 🌐 Harsh Srivastava — Personal Portfolio
+
+Welcome to the source code for my personal portfolio website!  
+This is a **fully responsive, modern single-page application** built with **React** to showcase my skills, projects, and journey as a developer.  
+
+It features a **clean, glassmorphism-inspired UI** with a **dynamic particle background**, and serves as an interactive hub to learn more about me and my work.
+
+---
+
+## 📸 Screenshots
+Images are located in the `/Portfolio-Harsh Srivastava/images/` folder.
+
+- **Home Page**
+- **About Page**
+- **Projects Page**
+- **Contact Page**
+
+---
+
+## ✨ Features
+
+- **Modern UI/UX** — Clean, glassmorphism theme for navigation and footer.
+- **Interactive Background** — Animated particle effects using `tsparticles`.
+- **Dynamic Project Fetching** — Automatically fetches public repositories from the GitHub API.
+- **Interactive Timeline** — Visually engaging academic and professional journey on the "About Me" page.
+- **Functional Contact Form** — Integrated with Formspree to send messages directly to my email.
+- **Fully Responsive** — Optimized for all devices: mobiles, tablets, and desktops.
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:** React  
+**Build Tool:** Vite  
+**API Calls:** Axios  
+**Particle Animations:** tsParticles  
+**Contact Form:** Formspree  
+**Deployment:** GitHub Pages  
+
+---
+
+## 🚀 Setup & Installation
+
+To run this project locally:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Harsh-Sriv/your-repo-name.git
+   cd your-repo-name
