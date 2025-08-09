@@ -12,7 +12,7 @@ Images are located in the `/Portfolio-Harsh Srivastava/images/` folder.
 
 ![Home Page](Portfolio-Harsh%20Srivastava/Images/Home.png)
 ![About Page](Portfolio-Harsh%20Srivastava/Images/About.png)
-![Projects Page](Portfolio-Harsh%20Srivastava/Images/Projects.png)
+![Projects Page](Portfolio-Harsh%20Srivastava/Images/Project.png)
 ![Contact Page](Portfolio-Harsh%20Srivastava/Images/Contact.png)
 
 
