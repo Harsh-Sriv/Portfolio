@@ -1,27 +1,95 @@
+/* src/CSS/navbar.css */
+
+:root {
+  /* This is the key change: Use a SEMI-transparent color */
+  --nav-bg-color: rgba(25, 25, 25, 0.5); 
+
+  /* A smaller blur value looks more like glass */
+  --nav-blur: 10px;
+
+  /* --- Link Color Changes --- */
+  /* Make link backgrounds transparent to see the blur through them */
+  --link-bg-color: transparent;
+  /* Use subtle highlights for active/hover states */
+  --link-active-bg-color: rgba(255, 255, 255, 0.15);
+  --link-hover-bg-color: rgba(255, 255, 255, 0.1);
+  /* Make link text white to be visible */
+  --link-text-color: #ffffff;
+  /* A subtle border that matches the glass theme */
+  --link-border-color: rgba(255, 255, 255, 0.2);
+  --border-radius: 12px;
+}
+
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  color: white;
+  padding: 10px 20px;
+  background-color: var(--nav-bg-color);
+  backdrop-filter: blur(var(--nav-blur));
+  -webkit-backdrop-filter: blur(var(--nav-blur)); /* For Safari */
+  z-index: 1000;
+  /* A more subtle shadow */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-
-.logo{
-    height: 45px;
-   
+.logo {
+  height: 45px;
+  vertical-align: middle;
 }
 
-.logo:active{
-    filter: drop-shadow(0 0 2em #61dafbaa);
+.nav-links {
+  display: flex;
+  border: 1px solid var(--link-border-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
 }
 
-.logo:hover{
-    filter: drop-shadow(0 0 2em #646cffaa);
+.nav-link {
+  padding: 10px 20px;
+  color: var(--link-text-color);
+  background-color: var(--link-bg-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  border-left: 1px solid var(--link-border-color);
 }
 
-nav{
-    display: flex;
-    gap: 1rem;
+.nav-links .nav-link:first-child {
+  border-left: none;
+}
+
+.nav-link:hover {
+  background-color: var(--link-hover-bg-color);
+}
+
+.nav-link.active {
+  background-color: var(--link-active-bg-color);
+  font-weight: 700;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Make sure your dark mode icon is visible */
+.theme-toggle img {
+    filter: invert(1); 
 }

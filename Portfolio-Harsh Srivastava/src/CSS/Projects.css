@@ -1,0 +1,140 @@
+.projects-page {
+  padding: 60px 40px;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.projects-page h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: rgba(40, 40, 40, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: #ccc;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 255, 229, 0.2);
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+  color: #00ffe5; /* Accent color */
+  margin: 0;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex-grow: 1; /* Pushes the language info to the bottom */
+}
+
+.project-language {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgba(0, 255, 229, 0.2);
+  padding: 5px 10px;
+  border-radius: 5px;
+  align-self: flex-start;
+}
+
+.loading, .error {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+
+/* ... (keep existing .projects-page, h1, .loading, .error styles) ... */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Updated Project Card styles */
+.project-card {
+  background: rgba(40, 40, 40, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px; /* Slightly larger radius */
+  text-decoration: none;
+  color: #ccc;
+  overflow: hidden; /* Important for the image's rounded corners */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 255, 229, 0.2);
+}
+
+/* New style for the image container */
+.project-image-container {
+  width: 100%;
+  height: 180px;
+  background-color: rgba(255, 255, 255, 0.05); /* Placeholder background */
+  overflow: hidden;
+}
+
+.project-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allows content to fill space */
+  gap: 10px;
+}
+
+.project-content h3 {
+  font-size: 1.4rem;
+  color: #00ffe5;
+  margin: 0;
+}
+
+.project-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.project-language {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgba(0, 255, 229, 0.2);
+  padding: 5px 10px;
+  border-radius: 5px;
+  align-self: flex-start;
+}
